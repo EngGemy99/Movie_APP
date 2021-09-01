@@ -1,0 +1,50 @@
+.movieContainer {
+    h3 {
+        position: relative;
+
+        &:hover {
+            &::after {
+                width: 40%;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            transition: all 0.3s;
+
+            width: 30%;
+            height: 4px;
+            background-color: #2196f3;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .item {
+        &:hover {
+            p {
+                transform: translateY(0%);
+            }
+        }
+        p {
+            transition: all 0.3s;
+            position: absolute;
+            color: #fff;
+            bottom: -1rem;
+            background: rgba(0, 0, 0, 0.342);
+            width: 92%;
+            font-size: 20px;
+            text-align: center;
+            transform: translateY(100%);
+        }
+    }
+}
+
+.badge-primary,
+.badge-danger,
+.badge-warning {
+    top: 11px;
+    right: 15px;
+    position: absolute;
+    width: 30px;
+}

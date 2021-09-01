@@ -1,0 +1,49 @@
+.movieContainer h3 {
+  position: relative;
+}
+
+.movieContainer h3:hover::after {
+  width: 40%;
+}
+
+.movieContainer h3::after {
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 30%;
+  height: 4px;
+  background-color: #2196f3;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.movieContainer .item:hover p {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.movieContainer .item p {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  color: #fff;
+  bottom: -1rem;
+  background: rgba(0, 0, 0, 0.342);
+  width: 92%;
+  font-size: 20px;
+  text-align: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.badge-primary,
+.badge-danger,
+.badge-warning {
+  top: 11px;
+  right: 15px;
+  position: absolute;
+  width: 30px;
+}
